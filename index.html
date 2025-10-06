@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poorva Ghosh, Ph.D. — Portfolio</title>
+  <meta name="description" content="Scientist II in Oncology & Immunology. Lung cancer research, antibody therapeutics, heme biology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d12; --card:#121621; --ink:#e6ecff; --muted:#9fb0d9; --accent:#6aa8ff; --pill:#1a2030;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--ink);}
+    a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 20px 64px}
+    header{display:grid; grid-template-columns:160px 1fr; gap:24px; align-items:center;}
+    .avatar{width:160px; height:160px; border-radius:18px; background:#0e111a url('./assets/poorva.jpg') center/cover no-repeat; border:1px solid #1f2637}
+    .title h1{font-size:36px; margin:0 0 6px}
+    .title p{margin:0; color:var(--muted)}
+    .pillrow{margin-top:10px; display:flex; flex-wrap:wrap; gap:8px}
+    .pill{background:var(--pill); border:1px solid #1f2637; color:#bcd0ff; padding:6px 10px; border-radius:999px; font-size:12px}
+    .grid{margin-top:28px; display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
+    .card{background:var(--card); border:1px solid #1f2637; border-radius:16px; padding:18px}
+    .span6{grid-column:span 6} .span4{grid-column:span 4} .span8{grid-column:span 8} .span12{grid-column:span 12}
+    h2{margin:0 0 12px; font-size:22px}
+    ul{margin:0; padding-left:18px}
+    .kpi{display:flex; gap:22px; flex-wrap:wrap}
+    .kpi div{background:var(--pill); border:1px solid #1f2637; border-radius:12px; padding:10px 14px}
+    .tag{font-size:12px; color:var(--muted)}
+    .btn{display:inline-block; background:#1a67ff; color:white; padding:10px 14px; border-radius:10px; border:0}
+    .btn.secondary{background:transparent; border:1px solid #2a3550}
+    footer{margin-top:36px; color:var(--muted); font-size:13px}
+    @media (max-width:900px){header{grid-template-columns:1fr;} .avatar{margin:0 auto} .span6,.span4,.span8,.span12{grid-column:span 12}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar" style="background-image:url('./assets/poorva_aacr2024.jpg')" title="Upload ./assets/poorva_aacr2024.jpg in your repo"></div>
+      <div class="title">
+        <h1>Poorva Ghosh, Ph.D.</h1>
+        <p>Molecular Biologist — Small‑Molecule Drug Discovery (Oncology & Allergic Diseases)</p>
+        <div class="pillrow">
+          <span class="pill">Heme biology</span>
+          <span class="pill">Lung cancer</span>
+          <span class="pill">Antibody therapeutics</span>
+          <span class="pill">In vivo models</span>
+          <span class="pill">Flow cytometry</span>
+        </div>
+        <div class="pillrow" style="margin-top:12px">
+          <a class="btn" href="mailto:ghosh.poorva@gmail.com">Email</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/poorva-ghosh-ph-d-4965b86a/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn secondary" href="https://scholar.google.com/citations?user=2eAcrfUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn secondary" href="./Poorva_Ghosh_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card span8">
+        <h2>About</h2>
+        <p>
+          I am a molecular biologist with extensive experience driving small-molecule drug discovery in oncology and allergic diseases. Over the years, I have led cross-functional projects from target validation through preclinical development, combining deep technical expertise with strategic leadership to translate science into impactful therapies. I am passionate about building collaborative teams, advancing innovative research, and turning complex challenges into transformative therapies.
+        </p>
+      </div>
+      <div class="card span4">
+        <h2>At a glance</h2>
+        <div class="kpi">
+          <div><strong>10+</strong><div class="tag">peer‑reviewed works</div></div>
+          <div><strong>1</strong><div class="tag">patent (PCDH7 mAb)</div></div>
+          <div><strong>2013–25</strong><div class="tag">oncology research</div></div>
+        </div>
+      </div>
+
+      <div class="card span6">
+        <h2>Selected Publications</h2>
+        <ul>
+          <li><em>Int. J. Mol. Sci.</em> (2020): Mitochondria targeting as an effective strategy for cancer therapy.</li>
+          <li><em>Cancer Research</em> (2019, 2020): Oxygen‑enhanced optoacoustic tomography; heme metabolism in NSCLC.</li>
+          <li><em>Molecular Cancer Therapeutics</em> (2021): Heme sequestration suppresses lung tumor growth.</li>
+          <li><em>npj Drug Discovery</em> (2024): Soquelitinib, a selective ITK inhibitor that modulates tumor immunity.</li>
+        </ul>
+        <p class="tag">Full list on Google Scholar.</p>
+      </div>
+
+      <div class="card span6">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Co‑inventor: monoclonal antibodies against PCDH7 for lung cancer therapy (US 63/515,000).</li>
+          <li>Developed heme‑sequestering strategies that normalize tumor vascular oxygenation in vivo.</li>
+          <li>Led cross‑functional studies for IND packages; authored IACUC protocols and study reports.</li>
+        </ul>
+      </div>
+
+      <div class="card span12">
+        <h2>Projects & Media</h2>
+        <ul>
+          <li><a href="https://www.drugdiscoverytrends.com/biologists-design-new-molecules-to-help-stall-lung-cancer/" target="_blank" rel="noopener">Biologists design new molecules to help stall lung cancer</a> — feature coverage.</li>
+          <li><a href="https://news.utdallas.edu/health-medicine/university-biologists-design-new-molecules-to-help-stall-lung-cancer/" target="_blank" rel="noopener">UT Dallas news release</a> on heme‑sequestering peptides.</li>
+          <li><a href="https://aacrjournals.org/mct/article/20/12/2506/675119/Heme-Sequestration-as-an-Effective-Strategy-for" target="_blank" rel="noopener">Molecular Cancer Therapeutics (2021)</a> — heme sequestration strategy.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Poorva Ghosh. Site built with GitHub Pages.
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
