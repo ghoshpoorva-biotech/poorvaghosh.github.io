@@ -3,260 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Poorva Ghosh PhD — Portfolio</title>
-  <meta name="description" content="Scientist II in oncology and immunology. Molecular biologist leading small molecule discovery from target validation to preclinical development.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <title>Poorva Ghosh | Molecular Biologist</title>
   <style>
-    :root{
-      --bg:#0b0d12; --card:#121621; --ink:#e6ecff; --muted:#9fb0d9; --accent:#6aa8ff; --pill:#1a2030; --line:#1f2637;
+    :root {
+      --ink: #212529;
+      --bg: #f8f9fa;
+      --brand: #00796b;
+      --brand-dark: #004d40;
+      --muted: #555;
+      --border: #dfe3e6;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0; padding:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--ink);}
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1100px; margin:0 auto; padding:28px 20px 64px}
-    header{display:grid; grid-template-columns:160px 1fr; gap:24px; align-items:center;}
-    .avatar{width:160px; height:160px; border-radius:18px; background:#0e111a center/cover no-repeat; border:1px solid var(--line)}
-    .title h1{font-size:36px; margin:0 0 6px}
-    .title p{margin:0; color:var(--muted)}
-    nav{margin-top:14px; display:flex; flex-wrap:wrap; gap:10px}
-    .navlink{font-size:13px; color:#bdd2ff; background:var(--pill); border:1px solid var(--line); padding:6px 10px; border-radius:999px}
-    .pillrow{margin-top:10px; display:flex; flex-wrap:wrap; gap:8px}
-    .pill{background:var(--pill); border:1px solid var(--line); color:#bcd0ff; padding:6px 10px; border-radius:999px; font-size:12px}
-    .btn{display:inline-block; background:#1a67ff; color:white; padding:10px 14px; border-radius:10px; border:0}
-    .btn.secondary{background:transparent; border:1px solid #2a3550; color:#cfe0ff}
-    .grid{margin-top:28px; display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
-    .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px}
-    .span3{grid-column:span 3} .span4{grid-column:span 4} .span5{grid-column:span 5}
-    .span6{grid-column:span 6} .span7{grid-column:span 7} .span8{grid-column:span 8}
-    .span12{grid-column:span 12}
-    h2{margin:0 0 12px; font-size:22px}
-    h3{margin:0 0 6px; font-size:16px}
-    ul{margin:0; padding-left:18px}
-    .kpi{display:flex; gap:22px; flex-wrap:wrap}
-    .kpi div{background:var(--pill); border:1px solid var(--line); border-radius:12px; padding:10px 14px}
-    .tag{font-size:12px; color:var(--muted)}
-    .list-compact li{margin-bottom:8px}
-    .proj{display:flex; flex-direction:column; gap:6px}
-    .proj p{margin:0; color:#c6d6ff; font-size:14px}
-    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-    .exp-item{display:flex; flex-direction:column; gap:6px}
-    .exp-meta{font-size:13px; color:var(--muted)}
-    .skillgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
-    .skill{background:var(--pill); border:1px solid var(--line); padding:10px; border-radius:10px; font-size:14px; color:#cfe0ff}
-    footer{margin-top:36px; color:var(--muted); font-size:13px}
-    @media (max-width:900px){
-      header{grid-template-columns:1fr;} .avatar{margin:0 auto}
-      .span3,.span4,.span5,.span6,.span7,.span8,.span12{grid-column:span 12}
-      .row{grid-template-columns:1fr}
-      .skillgrid{grid-template-columns:repeat(2,1fr)}
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      margin: 0;
     }
-    .anchor{position:relative; top:-80px}
+    .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+    header { text-align: center; }
+    img.avatar {
+      border-radius: 50%;
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      margin-top: 10px;
+      border: 4px solid var(--brand);
+      background: #eee;
+    }
+    h1 { font-size: 2.2em; margin: 16px 0 6px; color: var(--brand-dark); }
+    h2 { color: var(--brand); margin: 28px 0 10px; font-size: 1.5em; }
+    p { font-size: 1.05em; line-height: 1.6; margin: 10px 0; }
+    .center { text-align: center; }
+    .sub { color: var(--muted); margin-top: 6px; }
+    .badges { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+    .badge { border: 1px solid var(--border); background: #fff; padding: 6px 10px; border-radius: 999px; font-size: .9em; }
+    .buttons { margin-top: 18px; text-align: center; }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 8px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 2px solid var(--brand);
+      color: var(--brand);
+      transition: background-color .2s ease, color .2s ease;
+    }
+    .btn.primary { background-color: var(--brand); color: #fff; }
+    .btn.primary:hover { background-color: var(--brand-dark); }
+    .btn.secondary:hover { background-color: var(--brand); color: #fff; }
+    section { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--border); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    ul { padding-left: 18px; margin: 10px 0; }
+    li { margin: 6px 0; }
+    .kicker { font-weight: 600; color: var(--brand-dark); }
+    .meta { color: #6b6f75; font-size: .95em; }
+    footer {
+      margin: 40px 0 10px;
+      font-size: 0.9em;
+      color: var(--muted);
+      text-align: center;
+    }
+    a { color: var(--brand); }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
+
     <header>
-      <div class="avatar" id="avatar" title="Profile photo"></div>
-      <div class="title">
-        <h1>Poorva Ghosh PhD</h1>
-        <p>Molecular biologist. Small molecule discovery in oncology and allergic diseases. Cross functional leadership from target validation to preclinical development.</p>
+      <img class="avatar" src="./poorva.jpg" alt="Poorva Ghosh profile photo" />
+      <h1>Dr. Poorva Ghosh</h1>
+      <p class="sub"><strong>Molecular Biologist • Oncology & Immunology • Drug Discovery Scientist</strong></p>
 
-        <div class="pillrow">
-          <span class="pill">Heme biology</span>
-          <span class="pill">Lung cancer</span>
-          <span class="pill">Antibody therapeutics</span>
-          <span class="pill">In vivo models</span>
-          <span class="pill">Flow cytometry</span>
-        </div>
+      <div class="badges">
+        <span class="badge">Heme biology</span>
+        <span class="badge">Lung cancer</span>
+        <span class="badge">Antibody & small molecules</span>
+        <span class="badge">In vivo models</span>
+        <span class="badge">Flow cytometry</span>
+      </div>
 
-        <div class="pillrow" style="margin-top:12px">
-          <a class="btn" href="mailto:ghosh.poorva@gmail.com">Email</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/poorva-ghosh-ph-d-4965b86a/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn secondary" href="https://scholar.google.com/citations?user=2eAcrfUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <!-- Use your existing PDF filenames exactly (URL-encoded spaces) -->
-          <a class="btn secondary" href="./Resume%20Poorva%20Ghosh%205%2020%2025-2.pdf" target="_blank" rel="noopener">Download Resume</a>
-          <a class="btn secondary" href="./CV%20Poorva%20Ghosh%2010%205%202023.pdf" target="_blank" rel="noopener">View Full CV</a>
-        </div>
-
-        <nav>
-          <a class="navlink" href="#research">Research</a>
-          <a class="navlink" href="#experience">Experience</a>
-          <a class="navlink" href="#skills">Skills</a>
-          <a class="navlink" href="#education">Education</a>
-          <a class="navlink" href="#awards">Awards</a>
-          <a class="navlink" href="#publications">Publications</a>
-          <a class="navlink" href="#contact">Contact</a>
-        </nav>
+      <div class="buttons">
+        <a class="btn primary" href="./Poorva_Ghosh_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a class="btn" href="./Poorva_Ghosh_CV.pdf" target="_blank" rel="noopener">View Full CV</a>
       </div>
     </header>
 
-    <section class="grid">
-      <!-- About -->
-      <div class="card span8">
-        <h2>About</h2>
-        <p>
-          I am a molecular biologist with extensive experience driving small molecule drug discovery in oncology and allergic diseases. Over the years, I have led cross functional projects from target validation through preclinical development, combining deep technical expertise with strategic leadership to translate science into impactful therapies. I am passionate about building collaborative teams, advancing innovative research, and turning complex challenges into transformative therapies.
-        </p>
-      </div>
-      <div class="card span4">
-        <h2>At a glance</h2>
-        <div class="kpi">
-          <div><strong>10+</strong><div class="tag">peer reviewed works</div></div>
-          <div><strong>1</strong><div class="tag">patent filed</div></div>
-          <div><strong>2013 to 2025</strong><div class="tag">oncology research</div></div>
+    <section class="center">
+      <p>
+        I am a molecular biologist with extensive experience driving small-molecule drug discovery
+        in oncology and allergic diseases. Over the years, I have led cross-functional projects from
+        target validation through preclinical development, combining deep technical expertise with
+        strategic leadership to translate science into impactful therapies. I am passionate about
+        building collaborative teams, advancing innovative research, and turning complex challenges into
+        transformative therapies.
+      </p>
+      <p>
+        🔬 <strong>Featured:</strong>
+        <a href="https://www.drugdiscoverytrends.com/biologists-design-new-molecules-to-help-stall-lung-cancer/" target="_blank">
+          Biologists design new molecules to help stall lung cancer
+        </a>
+        &nbsp;|&nbsp; 📚 <strong>Google Scholar:</strong>
+        <a href="https://scholar.google.com/citations?user=2eAcrfUAAAAJ&hl=en" target="_blank">Profile</a>
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="kicker">Scientist II — Corvus Pharmaceuticals, Inc.</div>
+          <div class="meta">South San Francisco, CA | Aug 2022 – Present</div>
+          <ul>
+            <li>Leads target validation and MOA studies for small-molecule therapeutics in T-cell lymphoma, solid tumors, and allergy models.</li>
+            <li>Developed screening assays for next-gen autoimmune disease drug candidates.</li>
+            <li>Coordinated cross-functional research and CRO partnerships; authored IND-supporting regulatory documents.</li>
+          </ul>
         </div>
-      </div>
-
-      <!-- Research Projects -->
-      <span id="research" class="anchor"></span>
-      <div class="card span12">
-        <h2>Research projects</h2>
-        <div class="grid" style="margin-top:4px; grid-template-columns:repeat(12,1fr); gap:12px">
-          <div class="card span6 proj">
-            <h3>Heme sequestration strategy for lung tumors</h3>
-            <p>Designed and evaluated molecules that bind free heme to disrupt tumor metabolism and improve oxygenation profiles in vivo. Led study design, data analysis, and reports.</p>
-            <p class="tag"><a href="https://www.drugdiscoverytrends.com/biologists-design-new-molecules-to-help-stall-lung-cancer/" target="_blank" rel="noopener">Feature article</a></p>
-          </div>
-          <div class="card span6 proj">
-            <h3>PCDH7 targeted therapeutics</h3>
-            <p>Co inventor on antibody approach against PCDH7 with potential in lung cancer. Contributed to target biology, assay development, and mechanism studies.</p>
-            <p class="tag">Patent pending</p>
-          </div>
-          <div class="card span6 proj">
-            <h3>Selective ITK inhibition and tumor immunity</h3>
-            <p>Characterized immune modulation with a selective ITK inhibitor and evaluated impact on the tumor microenvironment using in vivo models and flow cytometry.</p>
-            <p class="tag">See publications below</p>
-          </div>
-          <div class="card span6 proj">
-            <h3>Imaging and metabolic readouts in solid tumors</h3>
-            <p>Applied oxygen enhanced optoacoustic tomography and metabolic assays to map vascular and mitochondrial responses to candidate therapies.</p>
-            <p class="tag"><a href="https://scholar.google.com/citations?user=2eAcrfUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
-          </div>
+        <div class="card">
+          <div class="kicker">Postdoctoral Researcher — Dr. Kathryn O’Donnell Lab</div>
+          <div class="meta">UT Southwestern Medical Center | Jun 2020 – Jul 2022</div>
+          <ul>
+            <li>Characterized a novel monoclonal antibody for lung cancer treatment; evaluated in vivo efficacy and MOA.</li>
+            <li>Engineered transgenic and conditional knockout mouse models for oncogenic pathway studies.</li>
+            <li>Co-inventor on a patent for anti-PCDH7 monoclonal antibodies (lung cancer therapy).</li>
+          </ul>
         </div>
-      </div>
-
-      <!-- Experience -->
-      <span id="experience" class="anchor"></span>
-      <div class="card span12">
-        <h2>Experience</h2>
-        <div class="row">
-          <div class="card exp-item">
-            <h3>Scientist II — Oncology and Immunology</h3>
-            <div class="exp-meta">Industry role • Drug discovery • Preclinical models</div>
-            <ul class="list-compact">
-              <li>Owned cross functional studies from assay development to IND supporting packages.</li>
-              <li>Built and ran in vivo models including xenograft and genetic mouse models.</li>
-              <li>Designed mechanism studies using flow cytometry and multiplex assays.</li>
-            </ul>
-          </div>
-          <div class="card exp-item">
-            <h3>Academic research — Molecular oncology</h3>
-            <div class="exp-meta">University labs • Translational projects</div>
-            <ul class="list-compact">
-              <li>Advanced heme biology in cancer and mitochondrial targeting strategies.</li>
-              <li>Collaborated across imaging cores and computational analysis teams.</li>
-              <li>Co authored manuscripts and conference abstracts.</li>
-            </ul>
-          </div>
+        <div class="card">
+          <div class="kicker">Graduate Researcher — Dr. Li Zhang Lab</div>
+          <div class="meta">University of Texas at Dallas | Mar 2015 – May 2020</div>
+          <ul>
+            <li>Discovered and evaluated heme-targeting peptide strategies for lung cancer therapy.</li>
+            <li>Used optoacoustic tomography for tumor imaging and vascular oxygenation studies.</li>
+            <li>Analyzed heme flux and tumor metabolism using genetically engineered mouse models.</li>
+          </ul>
         </div>
-      </div>
-
-      <!-- Skills -->
-      <span id="skills" class="anchor"></span>
-      <div class="card span7">
-        <h2>Technical skills</h2>
-        <div class="skillgrid">
-          <div class="skill">In vivo tumor models</div>
-          <div class="skill">Flow cytometry</div>
-          <div class="skill">Assay development</div>
-          <div class="skill">ELISA and MSD</div>
-          <div class="skill">Cell culture and CRISPR KO</div>
-          <div class="skill">GraphPad Prism</div>
-          <div class="skill">Imaging methods</div>
-          <div class="skill">Data analysis</div>
-          <div class="skill">Scientific writing</div>
+        <div class="card">
+          <div class="kicker">Teaching Assistant / Lecturer</div>
+          <div class="meta">UT Dallas & R.Y.K. Science College, India | 2012 – 2020</div>
+          <ul>
+            <li>Taught undergraduate courses in molecular biology, biochemistry, and cell biology labs.</li>
+            <li>Mentored students in laboratory techniques, small animal handling, and imaging.</li>
+          </ul>
         </div>
-      </div>
-      <div class="card span5">
-        <h2>Leadership and impact</h2>
-        <ul class="list-compact">
-          <li>Lead investigator for cross team studies and timelines.</li>
-          <li>Author of protocols and study reports with regulatory awareness.</li>
-          <li>Mentor for junior researchers and interns.</li>
-        </ul>
-      </div>
-
-      <!-- Education -->
-      <span id="education" class="anchor"></span>
-      <div class="card span6">
-        <h2>Education</h2>
-        <ul class="list-compact">
-          <li>Doctor of Philosophy in Molecular Biology</li>
-          <li>Master of Science in Biological Sciences</li>
-          <li>Bachelor of Science in Biotechnology</li>
-        </ul>
-        <p class="tag">Details in the full CV.</p>
-      </div>
-
-      <!-- Awards -->
-      <span id="awards" class="anchor"></span>
-      <div class="card span6">
-        <h2>Awards and recognition</h2>
-        <ul class="list-compact">
-          <li>Conference selections and invited presentations.</li>
-          <li>Feature coverage of heme sequestration work.</li>
-          <li>Travel and merit awards during graduate research.</li>
-        </ul>
-      </div>
-
-      <!-- Publications -->
-      <span id="publications" class="anchor"></span>
-      <div class="card span12">
-        <h2>Selected publications</h2>
-        <ul class="list-compact">
-          <li>Heme sequestration as a strategy for tumor control — Molecular Cancer Therapeutics.</li>
-          <li>Mitochondria targeting for cancer therapy — International Journal of Molecular Sciences.</li>
-          <li>Oxygen enhanced optoacoustic tomography in tumors — Cancer Research.</li>
-          <li>Selective ITK inhibition and immune modulation — npj Drug Discovery.</li>
-        </ul>
-        <p class="tag">Full list on <a href="https://scholar.google.com/citations?user=2eAcrfUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
-      </div>
-
-      <!-- Contact -->
-      <span id="contact" class="anchor"></span>
-      <div class="card span12">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ghosh.poorva@gmail.com">ghosh.poorva@gmail.com</a> • LinkedIn: <a href="https://www.linkedin.com/in/poorva-ghosh-ph-d-4965b86a/" target="_blank" rel="noopener">profile</a></p>
       </div>
     </section>
 
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="kicker">Ph.D., Molecular and Cell Biology</div>
+          <div class="meta">University of Texas at Dallas, USA (2020)</div>
+        </div>
+        <div class="card">
+          <div class="kicker">M.S., Molecular and Cell Biology</div>
+          <div class="meta">University of Texas at Dallas, USA (2016)</div>
+        </div>
+        <div class="card">
+          <div class="kicker">M.Sc., Biotechnology</div>
+          <div class="meta">Savitribai Phule Pune University, India (2011)</div>
+        </div>
+        <div class="card">
+          <div class="kicker">B.Sc., Biotechnology</div>
+          <div class="meta">Savitribai Phule Pune University, India (2009)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section>
+      <h2>Selected Publications</h2>
+      <ul>
+        <li>Hsu L.Y. et al., <em>Soquelitinib</em>, a selective ITK inhibitor modulating tumor immunity. <strong>npj Drug Discovery</strong>, 2024.</li>
+        <li>Ningyan Zhang et al., <em>Monoclonal Antibodies Against PCDH7 for Lung Cancer Therapy</em>, U.S. Patent filed 2023.</li>
+        <li>Ghosh P., Mason R.P., Liu L., Zhang L. <em>Modulation of heme and tumor vascular oxygenation</em>. <strong>Oncoscience</strong>, 2022.</li>
+        <li>Dey S. et al., <em>Heme sequestration suppresses lung carcinoma progression</em>. <strong>Molecular Cancer Research</strong>, 2021.</li>
+      </ul>
+      <p class="sub">Full list available on <a href="https://scholar.google.com/citations?user=2eAcrfUAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+    </section>
+
     <footer>
-      © <span id="y"></span> Poorva Ghosh. Site built with GitHub Pages.
+      <p>📧 <strong>Contact:</strong> poorvaghosh.biotech@gmail.com</p>
+      <p>© 2025 Poorva Ghosh • Hosted on GitHub Pages</p>
     </footer>
   </div>
-
-  <!-- Image fallback: tries multiple paths you already used; first one that loads wins -->
-  <script>
-    (function(){
-      const avatar = document.getElementById('avatar');
-      const candidates = [
-        './assets/poorva.jpg',
-        './poorva.jpg',
-        './assetspoorva_aacr2024.jpg'
-      ];
-      function tryNext(i){
-        if(i >= candidates.length) return;
-        const img = new Image();
-        img.onload = () => { avatar.style.backgroundImage = `url('${candidates[i]}')`; };
-        img.onerror = () => tryNext(i+1);
-        img.src = candidates[i];
-      }
-      tryNext(0);
-    })();
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
